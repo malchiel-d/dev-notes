@@ -1,2 +1,6 @@
 # Dev-Notes
-Notes and snippets from learning progra.ming.
+Notes and snippets from learning programming.
+## The repo includes 
+* cheat-sheets 
+* notes 
+* snippets and more
