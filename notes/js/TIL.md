@@ -18,8 +18,8 @@ It's much cleaner and allows for multi-line strings.
 
 ## Numbers
  
-## Special Numbers
-###NaN(not a number)
+### Special Numbers
+#### NaN(not a number)
 is a number even if it stands for not a number.
 
 ``javascript 
@@ -38,7 +38,7 @@ Math.sqrt(-1)  // NaN
 NaN doesn't equal to anything even itself 
 `NaN === NaN    // false`
 
-###Infinity 
+#### Infinity 
 Getting Infinity: 
 ```
 1 / 0          // Infinity
