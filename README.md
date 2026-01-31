@@ -6,9 +6,9 @@ This repository is a collection of my personal learning notes, code snippets, an
 
 ## 📂 Topics
 
-### [JavaScript](./js)
+### [JavaScript](notes/js)
 
-###  [Git & GitHub](./git)
+###  [Git & GitHub](notes/Git-and-GitHub)
 
 ###  [Archives](./Archive)
 *Old notes and reference material.*
@@ -18,7 +18,7 @@ This repository is a collection of my personal learning notes, code snippets, an
 ## Latest Focus
 
  Currently focusing on **JavaScript Fundamentals**.
-Check the [JavaScript Roadmap](./js/README.md) to see my detailed checklist.
+Check the [JavaScript Roadmap](notes/js/README.md) to see my detailed checklist.
 
 ---
 
