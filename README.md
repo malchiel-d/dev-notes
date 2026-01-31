@@ -10,7 +10,7 @@ This repository is a collection of my personal learning notes, code snippets, an
 
 ###  [Git & GitHub](notes/Git-and-GitHub)
 
-###  [Archives](./Archive)
+###  [Archives](notes/Archive)
 *Old notes and reference material.*
 
 ---
