@@ -49,3 +49,13 @@ Checking for Infinity:
 Number.isFinite(10)        // true
 Number.isFinite(Infinity) // false
 ```
+> ### Operator procedure 
+**same as maths**
++ and - together -> left to right
+```javascript 
+const result = 10 - 2 + 3;//its 11 not 5
+```
+exponents -> right to left 
+```javascript 
+const result = 2 ** 3 ** 2//512
+```
