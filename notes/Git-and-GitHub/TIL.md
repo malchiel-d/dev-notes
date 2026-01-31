@@ -5,5 +5,5 @@
 - `git commit -m"msg"` **commit**
 - `git push` **push**
 
-##others
+## others
 - `git pull` **download + integrate**
