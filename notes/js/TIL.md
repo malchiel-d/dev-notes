@@ -51,7 +51,7 @@ Number.isFinite(Infinity) // false
 ```
 > ### Operator procedure 
 **same as maths**
-+ and - together -> left to right
+if + and - together -> left to right
 ```javascript 
 const result = 10 - 2 + 3;//its 11 not 5
 ```
