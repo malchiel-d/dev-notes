@@ -67,14 +67,15 @@ const result = 2 ** 3 ** 2//512
 
 > ## Boolean
 
-### Equal
+###operartors
+#### Equal
 | Operator | Meaning |
 |----------|---------|
 | `=`      | Assign |
 | `==`     | Equal (value) |
 | `===`    | Strict equal (value + datatype) |
 
-### Inequal
+#### Inequal
 | Operator | Meaning |
 |----------|---------|
 | `!=`     | Inequality |
@@ -84,3 +85,14 @@ const result = 2 ** 3 ** 2//512
 console.log(5 == "5");   // true
 console.log(5 === "5"); // false
 ```
+
+#### Unary operators 
+
+| Operator | Name | Example | Result |                                
+|---------------|------------------|----------------|-----------|
+|      +        | Unary Plus | +"5" | Converts the string "5" into the number 5. |
+| - | Unary Negation  | -x | Flips the sign of x. |
+| ++       | Increment       | x++        | Adds 1 to the value of x.             |
+| --       | Decrement       | x--        | Subtracts 1 from the value of x.     |
+| !        | Logical NOT     | !true      | Flips a boolean (becomes false).     |
+| typeof   | Type Discovery  | typeof 10  | Returns its type (number)     |
