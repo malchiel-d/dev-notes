@@ -67,7 +67,7 @@ const result = 2 ** 3 ** 2//512
 
 > ## Boolean
 
-###operartors
+### operartors
 #### Equal
 | Operator | Meaning |
 |----------|---------|
