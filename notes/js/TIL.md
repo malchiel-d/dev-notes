@@ -96,3 +96,12 @@ console.log(5 === "5"); // false
 | --       | Decrement       | x--        | Subtracts 1 from the value of x.     |
 | !        | Logical NOT     | !true      | Flips a boolean (becomes false).     |
 | typeof   | Type Discovery  | typeof 10  | Returns its type (number)     |
+
+#### If...else 
+
+- **[Falsy values](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)** wont run inside an `if` condition.
+- **Multiple conditions** are handled using `else if`.
+
+##### Ternary Operator 
+```js
+const weather = temperature > 25 ? 'sunny' : 'cool';
