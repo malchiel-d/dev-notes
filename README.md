@@ -11,7 +11,7 @@ This repository is a collection of my personal learning notes, code snippets, an
 ###  [Git & GitHub](notes/Git-and-GitHub)
 
 ###  [Archives](notes/Archive)
-*Old notes and reference material.*
+> Old notes and reference material.
 
 ---
 
