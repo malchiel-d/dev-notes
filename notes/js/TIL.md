@@ -105,3 +105,13 @@ console.log(5 === "5"); // false
 ##### Ternary Operator 
 ```js
 const weather = temperature > 25 ? 'sunny' : 'cool';
+
+**Notes**
+#### 1. Check Order
+* Always check for **empty values** before proceeding with other logic.
+
+#### 2. Assignment vs. Equality
+* `=` is **Assignment**, not Comparison.
+* `if (x = 5)`: Assigns `5` to `x`. This evaluates to **True**, and the block **will run**.
+* `if (x = "")`: Assigns an empty string to `x`. This evaluates to **False**, and the block **will not run**
+
