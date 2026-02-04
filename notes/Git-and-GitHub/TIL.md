@@ -23,7 +23,6 @@
     3. Resolve any conflicts, then `git push`.
 
 ## Best Practices
-* **Setup:**
+ **Setup:**
     - `git config --global user.name "Your Name"`
     - `git config --global user.email "you@example.com"`
-* 
