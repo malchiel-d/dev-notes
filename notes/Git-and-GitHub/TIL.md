@@ -33,9 +33,10 @@ Configure your identity (required before committing):
 
 > ## Branches
 - `git branch` — List local branches.
+- `git branch -r` - List remote(github) files.
 - `git branch <name>` — Create a new branch.
 - `git switch <name>` — Switch to a branch.
-- `git switch -b <name>` — Create and switch to a new branch.
+- `git checkout -b <name>` — Create and switch to a new branch.
 - `git branch -d <name>` — Delete a branch.
 - `git merge <name>` being on main - merges branch
 > ## Undoing Changes
