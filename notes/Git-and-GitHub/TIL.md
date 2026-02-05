@@ -1,28 +1,60 @@
-# Git & GitHub
+# Git & GitHub 
 
-## The Standard Workflow
-- `git add .` — **Stage** changes for the next commit.
-- `git commit -m "msg"` — **Commit** the staged changes to history.
-- `git push` — **Upload** local commits to the remote server.
+## Initial Setup (One-Time)
+Configure your identity (required before committing):
+- `git config --global user.name "Your Name"`
+- `git config --global user.email "you@example.com"`
 
-## Syncing & Inspection
-- `git fetch` — Download history from remote without changing local files.
-- `git pull` — **Download + Integrate** (Fetch + Merge) remote changes.
-- `git status` — See which files are staged, unstaged, or untracked.
-- `git clone [url]` — Create a local copy of a remote repository.
+## Starting a Repository
+### Create a New Local Repository
+- `git init` — Initialize a new Git repository in the current folder.
+
+### Clone an Existing Repository
+- `git clone <url>` — Create a local copy of a remote repository.
+
+## Pushing changes
+1. **Stage changes**
+   - `git add .` — Stage all modified and new files.
+2. **Commit changes**
+   - `git commit -m "message"` — Save staged changes to history.
+3. **Push to remote**
+   - `git push` — Upload local commits to the remote repository.
+
+## Syncing With Remote( github is ahead of local)
+- `git fetch` — Download remote history **without** modifying local files.
+- `git pull` — Fetch **and merge** remote changes into the current branch.
+- `git push` — Send local commits to the remote branch.
 
 ## Inspecting Changes Before Pushing
-* **List Commits:** `git log origin/main..HEAD --oneline` (Shows titles of commits waiting to be pushed).
-* **View Code Diff:** `git diff origin/main..HEAD` (Shows exact line changes).
-* **Navigation:** If the screen gets stuck in a list, press **`q`** to quit the pager and return to the terminal.
+- **Commits not yet pushed**
+  - `git log origin/main..HEAD --oneline`
+- **Code differences not yet pushed**
+  - `git diff origin/main..HEAD`
 
-## Troubleshooting Divergent Branches
-* **Scenario:** You edited the README on GitHub and made local commits. Git prevents pushing because histories have diverged.
-* **The Fix:** 1. Set merge preference: `git config pull.rebase false`
-    2. Pull remote changes: `git pull origin main`
-    3. Resolve any conflicts, then `git push`.
+## Branches
+- `git branch` — List local branches.
+- `git branch <name>` — Create a new branch.
+- `git checkout <name>` — Switch to a branch.
+- `git checkout -b <name>` — Create and switch to a new branch.
+- `git branch -d <name>` — Delete a branch.
 
-## Best Practices
- **Setup:**
-    - `git config --global user.name "Your Name"`
-    - `git config --global user.email "you@example.com"`
+## Undoing Changes
+
+### Undo Last Commit (Destructive)
+⚠️ Permanently removes the last commit and its changes.
+- `git reset --hard HEAD~1`
+
+### Unstage Files (Keep Changes)
+- `git reset`
+
+## Handling Divergent Branches
+### Scenario
+You edited files on GitHub and also committed locally. Git refuses to push due to divergent histories.
+
+### Fix (Merge Strategy)
+1. Set pull behavior:
+   - `git config pull.rebase false`
+2. Pull remote changes:
+   - `git pull origin main`
+3. Resolve conflicts (if any), then:
+   - `git push`
