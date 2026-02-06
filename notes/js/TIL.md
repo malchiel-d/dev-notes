@@ -1,6 +1,6 @@
 # JavaScript TIL
 
->## Variables: let vs const
+>## Variables
 
 - Use `const` by default for anything that won't change (prevents bugs).
 - Use `let` only if the value needs to be reassigned (like a counter in a loop).
@@ -97,12 +97,14 @@ console.log(5 === "5"); // false
 | !        | Logical NOT     | !true      | Flips a boolean (becomes false).     |
 | typeof   | Type Discovery  | typeof 10  | Returns its type (number)     |
 
-#### If...else 
+### If...else 
 
 - **[Falsy values](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)** wont run inside an `if` condition.
 - **Multiple conditions** are handled using `else if`.
 
 ##### Ternary Operator 
+
+short form of if...else
 ```js
 const weather = temperature > 25 ? 'sunny' : 'cool';
 ```
@@ -115,3 +117,49 @@ const weather = temperature > 25 ? 'sunny' : 'cool';
 * `if (x = 5)`: Assigns `5` to `x`. This evaluates to **True**, and the block **will run**.
 * `if (x = "")`: Assigns an empty string to `x`. This evaluates to **False**, and the block **will not run**
 
+
+### Logical operators
+
+- && --> returns the first falsy 
+- || -> returns  truly  skips falsy 
+- ?? -> returns the first non [null,undefined]
+- ! -> turns it to the **opposite** boolean 
+- !! -> turns it to  **correct** boolean 
+- [more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#logical_operators)
+## Math object 
+
+### Math Objects
+
+- `Math.abs(x)` ---> absolute value of x
+- `Math.ceil(x)` ---> round up
+- `Math.floor(x)` ---> round down
+- `Math.round(x)` ---> round to the nearest integer
+- `Math.max(...nums)` ---> highest value among arguments
+- `Math.min(...nums)` ---> lowest value among arguments
+- `Math.pow(base, exp)` ---> base to the power of exp
+- `Math.sqrt(x)` ---> square root of x
+- `Math.random()` ---> random number between 0 and 1
+- `Math.sin(x)` ---> sine of x (in radians)
+- `Math.cos(x)` ---> cosine of x (in radians)
+- `Math.PI` ---> value of Pi (~3.14159)
+- `Math.trunc(x)` ---> remove fractional digits (integer part)
+- `Math.sign(x)` ---> returns 1, -1, or 0 based on sign
+- `Math.hypot(...nums)` ---> square root of the sum of squares
+- `Math.cbrt(x)` ---> cube root of x
+- [**more**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+#### random number between 1 and 10
+```
+Math.floor(Math.random()*10)+1
+```
+#### find the max no. 
+```
+Math.max(1,2,3)
+```
+
+#### find max no. from array 
+```
+const array = [1,2,3]
+Math.max(...array)
+```
+`...` --> spread operator 
