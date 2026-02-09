@@ -163,3 +163,29 @@ const array = [1,2,3]
 Math.max(...array)
 ```
 `...` --> spread operator 
+
+###  Number Methods 
+
+#### 1. Checking for NaN
+* **`isNaN(value)`**: **Coerces** (converts) the value to a number first.
+    * *Risk:* Returns `true` for non-numeric strings (e.g., `isNaN("hello")` -> `true`).
+* **`Number.isNaN(value)`**: **No coercion**. Strict check.
+    * *Benefit:* Only returns `true` if the value is actually `NaN`.
+
+#### 2. String to Number (`parseInt` vs `parseFloat`)
+**Shared Traits:**
+* Both handle leading whitespace and `+`/`-` signs.
+* Both return `NaN` if the string starts with a non-convertible character.
+
+| Feature | `parseInt()` | `parseFloat()` |
+| :--- | :--- | :--- |
+| **Decimals** | Chops them out (Truncates) | Keeps them |
+| **Scientific Notation** | **No** (Stops at 'e') | **Yes** (Parses `"3.14e2"`) |
+| **Radix Support(hex,binary)** | Yes (`parseInt(str, radix)`) | No (Always Base 10) |
+
+#### 3. Formatting
+* **`.toFixed(digits)`**:
+    * Returns a **STRING**.
+    * Rounds to the specific decimal count.
+    * *Example:* `(3.567).toFixed(2)` -> `"3.57"`
+
