@@ -195,5 +195,7 @@ Math.max(...array)
     * Returns a **STRING**.
     * Rounds to the specific decimal count.
     * *Example:* `(3.567).toFixed(2)` -> `"3.57"`
->>>>>>> fdc4fa8696473029c79eef4e18aed97f934c1146
 
+
+> ## Function
+![Basics](images/function-basics.jpeg)
