@@ -163,3 +163,10 @@ const array = [1,2,3]
 Math.max(...array)
 ```
 `...` --> spread operator 
+
+
+
+
+> ## Functions 
+![basics](images/function-basics)
+
