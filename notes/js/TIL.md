@@ -199,3 +199,34 @@ Math.max(...array)
 
 > ## Function
 ![Basics](images/function-basics.jpeg)
+
+
+- **Default Value:** If no return is specified, the function returns `undefined`.
+- **Return:** Used to return a specific value.
+
+### Terminology
+- **Parameter:** The **placeholder** (variable definition).
+- **Argument:** The actual **value** passed.
+
+
+### Default Parameter
+​Definition: Runs (uses default value) when there are no arguments.
+function greet(name = "guest") {
+  console.log("Hello, " + name);
+}
+```
+greet();       // "Hello, guest" (uses default)
+greet("John"); // "Hello, John"
+```
+
+
+### Anonymous Function
+- **Definition:** Has no name and is assigned to a variable.
+
+
+```
+const sum = function(num1, num2) {
+  return num1 + num2;
+};
+```
+
