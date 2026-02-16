@@ -168,9 +168,6 @@ Math.max(...array)
 
 
 
-> ## Functions 
-![basics](images/function-basics)
-=======
 ###  Number Methods 
 
 #### 1. Checking for NaN
