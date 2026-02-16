@@ -227,3 +227,41 @@ const sum = function(num1, num2) {
 };
 ```
 
+
+### Js arrow function 
+
+**Normal Function**
+```
+function add(a, b) {
+  return a + b;
+}
+```
+
+
+**Anon Fun**
+```
+const add = function(a, b) {
+  return a + b;
+};
+```
+
+
+**Arrow**
+```
+const add = (a, b) => {
+  return a + b;
+};
+```
+
+
+**Arrow One Parameter**
+```
+const double = n => n * 2;
+```
+
+
+**Arrow No Braces (Implicit Return)**
+```
+const add = (a, b) => a + b;
+```
+
