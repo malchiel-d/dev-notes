@@ -228,7 +228,7 @@ const sum = function(num1, num2) {
 ```
 
 
-### Js arrow function 
+### Arrow function 
 
 **Normal Function**
 ```
@@ -264,4 +264,13 @@ const double = n => n * 2;
 ```
 const add = (a, b) => a + b;
 ```
-
+### Scopes 
+#### 1. Global  
+- variables declared outside function or block.
+- available everywhere.
+#### 2. Local 
+- variables declared inside a function.
+- all variables (let ,const,var) respct it.
+#### 3. Block
+- variables declared inside curly brace(if,loops,function)
+- var doesnt respect block (leaks out) unless its a  function
