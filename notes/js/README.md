@@ -3,12 +3,12 @@
 **Core Syntax**
 - [x] Variables (`let` vs `const`) & Primitives
 - [x] Console & Comments
-- [ ] Operators & Logic (`===`, `&&`, `||`)
+- [x] Operators & Logic (`===`, `&&`, `||`)
 - [ ] Control Flow (`if/else`, `switch`)
 
 **Functions & Loops**
-- [ ] Function Declarations & Parameters
-- [ ] Arrow Functions (`() => {}`)
+- [x] Function Declarations & Parameters
+- [x] Arrow Functions (`() => {}`)
 - [ ] Loops (`for`, `while`)
 
 **Data Structures**
