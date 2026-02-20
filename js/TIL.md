@@ -274,3 +274,83 @@ const add = (a, b) => a + b;
 #### 3. Block
 - variables declared inside curly brace(if,loops,function)
 - var doesnt respect block (leaks out) unless its a  function
+
+
+> ## Arrays
+zero indexed
+.length returns no. of elements 
+dynamic(areays can be modified)
+
+### push,pop,shift,unshift
+
+push/pop work on the end of the array, while unshift/shift work on the beginning.
+
+| Feature | `push` & `unshift` | `pop` & `shift` |
+| :--- | :--- | :--- |
+| **Action** | **Add** | **Remove** |
+| **Returns** | New length | Removed element |
+
+### distruction 
+extract value from array and assigning each value a variable.
+#### no distruction 
+```
+const colors = ['red', 'green', 'blue'];
+
+const first = colors[0];
+const second = colors[1];
+
+console.log(first); // red
+```
+#### with distruction 
+```
+const colors = ['red', 'green', 'blue'];
+
+// Unpacking the first two items
+const [first, second] = colors;
+
+console.log(first);  // red
+console.log(second); // green
+
+```
+#### skipping values 
+```
+const fruits = ['Apple', 'Banana', 'Cherry', 'Dragonfruit'];
+
+// We only want the first and the fourth item
+const [first, , , fourth] = fruits;
+
+console.log(first);  // Apple
+console.log(fourth); // Dragonfruit
+```
+#### default values 
+```
+const settings = ['Dark Mode'];
+
+// If the second item doesn't exist, it defaults to 'English'
+const [theme, language = 'English'] = settings;
+
+console.log(theme);    // Dark Mode
+console.log(language); // English
+
+```
+#### reset synthax 
+```
+const podium = ['Gold', 'Silver', 'Bronze', '4th Place', '5th Place'];
+
+const [winner, runnerUp, ...everyoneElse] = podium;
+
+console.log(winner);       // Gold
+console.log(everyoneElse); // ['Bronze', '4th Place', '5th Place']
+
+```
+#### reversing a string 
+
+```
+function revfun(){
+let array = string.split("");
+let reversed = array.reverse();
+let joined =reversed. join("");
+}
+console.log(revfun("hello"));//olleh
+```
+
