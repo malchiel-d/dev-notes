@@ -6,11 +6,11 @@ This repository is a collection of my personal learning notes, code snippets, an
 
 ## 📂 Topics
 
-### [JavaScript](notes/js)
+### [JavaScript](js)
 
-###  [Git & GitHub](notes/Git-and-GitHub)
+###  [Git & GitHub](Git-and-GitHub)
 
-###  [Archives](notes/Archive)
+###  [Archives](Archive)
 > Old notes and reference material.
 
 ---
@@ -18,8 +18,8 @@ This repository is a collection of my personal learning notes, code snippets, an
 ## Latest Focus
 
  Currently focusing on **JavaScript Fundamentals**.
-Check the [JavaScript Roadmap](notes/js/README.md) to see my detailed checklist.
+Check the [JavaScript Roadmap](js/README.md) to see my detailed checklist.
 
 ---
 
-*Repo structure refactored and main readme edit on Jan 31, 2026.*
+*Repo structure refactored and main readme edit on Feb 20, 2026.*
