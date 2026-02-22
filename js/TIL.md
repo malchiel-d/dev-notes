@@ -192,6 +192,35 @@ Math.max(...array)
     * Returns a **STRING**.
     * Rounds to the specific decimal count.
     * *Example:* `(3.567).toFixed(2)` -> `"3.57"`
+### null and undefined 
+```undefined```: - Unassigned variables        
+                 - Function parameters without arguments 
+
+```null```: - Intentional absence of value (set manually)
+```undefined``` turns to NaN in numeric operations
+```null>=0;//true```
+
+Both represent absence of value.
+Only equal to eachother and themselves.
+Use strict equality specially while dealing with null with null, undefined .
+
+### switch
+
+````
+switch(expression){
+  case value1:
+    // code
+    break;
+  case value2:
+    // code
+    break;
+  default:
+    // code    
+}
+````
+uses ```===```
+Better for 1 variable against many values.
+not good for complex stuff
 
 
 > ## Function
