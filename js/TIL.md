@@ -37,13 +37,13 @@ NaN doesn't equal to anything even itself
 
 #### Infinity 
 Getting Infinity: 
-```
+```js
 1 / 0          // Infinity
 -1 / 0         // -Infinity
 Number.MAX_VALUE * 2 // Infinity
 ```
 Checking for Infinity:
-```
+```js
 Number.isFinite(10)        // true
 Number.isFinite(Infinity) // false
 ```
@@ -164,9 +164,6 @@ Math.max(...array)
 ```
 `...` --> spread operator 
 
-<<<<<<< HEAD
-
-
 
 ###  Number Methods 
 
@@ -206,7 +203,7 @@ Use strict equality specially while dealing with null with null, undefined .
 
 ### switch
 
-````
+````js
 switch(expression){
   case value1:
     // code
@@ -240,7 +237,7 @@ not good for complex stuff
 function greet(name = "guest") {
   console.log("Hello, " + name);
 }
-```
+```js
 greet();       // "Hello, guest" (uses default)
 greet("John"); // "Hello, John"
 ```
@@ -250,7 +247,7 @@ greet("John"); // "Hello, John"
 - **Definition:** Has no name and is assigned to a variable.
 
 
-```
+```js
 const sum = function(num1, num2) {
   return num1 + num2;
 };
@@ -260,7 +257,7 @@ const sum = function(num1, num2) {
 ### Arrow function 
 
 **Normal Function**
-```
+```js
 function add(a, b) {
   return a + b;
 }
@@ -268,7 +265,7 @@ function add(a, b) {
 
 
 **Anon Fun**
-```
+```js
 const add = function(a, b) {
   return a + b;
 };
@@ -276,7 +273,7 @@ const add = function(a, b) {
 
 
 **Arrow**
-```
+```js
 const add = (a, b) => {
   return a + b;
 };
@@ -284,13 +281,13 @@ const add = (a, b) => {
 
 
 **Arrow One Parameter**
-```
+```js
 const double = n => n * 2;
 ```
 
 
 **Arrow No Braces (Implicit Return)**
-```
+```js
 const add = (a, b) => a + b;
 ```
 ### Scopes 
@@ -322,7 +319,7 @@ push/pop work on the end of the array, while unshift/shift work on the beginning
 ### distruction 
 extract value from array and assigning each value a variable.
 #### no distruction 
-````
+````js
 const colors = ['red', 'green', 'blue'];
 
 const first = colors[0];
@@ -331,7 +328,7 @@ const second = colors[1];
 console.log(first); // red
 ````
 #### with distruction 
-````
+````js
 const colors = ['red', 'green', 'blue'];
 
 // Unpacking the first two items
@@ -342,7 +339,7 @@ console.log(second); // green
 
 ````
 #### skipping values 
-````
+````js
 const fruits = ['Apple', 'Banana', 'Cherry', 'Dragonfruit'];
 
 // We only want the first and the fourth item
@@ -352,7 +349,7 @@ console.log(first);  // Apple
 console.log(fourth); // Dragonfruit
 ````
 #### default values 
-````
+````js
 const settings = ['Dark Mode'];
 
 // If the second item doesn't exist, it defaults to 'English'
@@ -363,7 +360,7 @@ console.log(language); // English
 
 ````
 #### reset synthax 
-````
+````js
 const podium = ['Gold', 'Silver', 'Bronze', '4th Place', '5th Place'];
 
 const [winner, runnerUp, ...everyoneElse] = podium;
@@ -374,7 +371,7 @@ console.log(everyoneElse); // ['Bronze', '4th Place', '5th Place']
 ````
 #### reversing a string 
 
-````
+````js
 function revfun(string){
 let array = string.split("");
 let reversed = array.reverse();
