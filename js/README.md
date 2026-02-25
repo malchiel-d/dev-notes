@@ -4,7 +4,7 @@
 - [x] Variables (`let` vs `const`) & Primitives
 - [x] Console & Comments
 - [x] Operators & Logic (`===`, `&&`, `||`)
-- [ ] Control Flow (`if/else`, `switch`)
+- [x] Control Flow (`if/else`, `switch`)
 
 **Functions & Loops**
 - [x] Function Declarations & Parameters
@@ -12,7 +12,7 @@
 - [ ] Loops (`for`, `while`)
 
 **Data Structures**
-- [ ] Arrays & Basic Methods (`.push`, `.pop`)
+- [x] Arrays & Basic Methods (`.push`, `.pop`)
 - [ ] High Order Methods (`.map`, `.filter`, `.reduce`)
 - [ ] Objects (Key-Value pairs)
 
