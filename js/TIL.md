@@ -369,15 +369,9 @@ console.log(winner);       // Gold
 console.log(everyoneElse); // ['Bronze', '4th Place', '5th Place']
 
 ````
-#### reversing a string 
-
+#### reversing a string  
 ````js
-function revfun(string){
-let array = string.split("");
-let reversed = array.reverse();
-let joined =reversed. join("");
-return joined
-}
-console.log(revfun("hello"));//olleh
+const revfun = string => string.split("").reverse().join("")
+console.log(revfun("hello"))
 ````
 
