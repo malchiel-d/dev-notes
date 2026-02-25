@@ -374,4 +374,49 @@ console.log(everyoneElse); // ['Bronze', '4th Place', '5th Place']
 const revfun = string => string.split("").reverse().join("")
 console.log(revfun("hello"))
 ````
+#### .indexof()
+synthax: 
+```js
+array.indexOf(element, start-index);
+```
+
+#### .splice()
+it is inclusive 
+returns removed item.
+modifies instead of crearing one 
+synthax:
+```js
+array.splice(start-index, items-to-remove, item1,item2);
+```
+removing 
+```js
+let fruits = ["apple", "banana", "orange"];
+fruits.splice(1,1);
+//removes "banana"
+```
+adding
+```js
+let colors = ["red","green","blue"];
+colors.splice(1,0,"yellow","purple");
+//adds "yellow","purple" after "red"
+```
+replacing
+```js
+let nums = [1,2,3,4,5];
+nums.splice(2,1,6);
+//replace 3 with 6
+```
+remove single element 
+```js
+let fruits = ["apple", "banana", "orange"];
+let toRem = indexOf("orange");
+if(toRem !== -1){
+fruits.splice(toRem, 1)
+}
+```
+
+clear array
+```js
+array.splice(0);
+```
 
