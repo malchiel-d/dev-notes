@@ -419,4 +419,19 @@ clear array
 ```js
 array.splice(0);
 ```
+#### shallow copies 
+a new area with same elements 
+primitive->separate, other->linked
+```concat()```
+```js
+[].concat(originalArray);
+```
+```slice()```
+```js
+originalArray.slice(start,end);
+```
+```spread```
+```js
+[...originalArray];
+```
 
