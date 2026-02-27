@@ -421,6 +421,7 @@ array.splice(0);
 ```
 #### shallow copies 
 a new area with same elements 
+<br>
 primitive->separate, other->linked
 ```concat()```
 ```js
