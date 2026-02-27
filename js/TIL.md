@@ -435,4 +435,37 @@ originalArray.slice(start,end);
 ```js
 [...originalArray];
 ```
+> ##  Objects
+- Everything is object 
+- Composed of:  property , value 
 
+```
+const person ={
+ name = "Joe"
+ age = 30
+ city = "Wonder Land"
+};
+let pptyName = "name"
+```
+
+`name`,`age`,`city` ---> properties
+
+`Joe`,... ---> values
+
+### accessing properties 
+dot method 
+
+```js
+console.log(person.name);//Joe
+```
+
+bracket method 
+- flexible 
+
+```js 
+console.log(person["name"]);//Joe
+```
+
+```js
+console.log(person[pptyName]);//Joe
+```
