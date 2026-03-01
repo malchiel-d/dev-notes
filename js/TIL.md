@@ -316,9 +316,9 @@ push/pop work on the end of the array, while unshift/shift work on the beginning
 | **Action** | **Add** | **Remove** |
 | **Returns** | New length | Removed element |
 
-### distruction 
+### Destructuring 
 extract value from array and assigning each value a variable.
-#### no distruction 
+#### no Destructuring 
 ````js
 const colors = ['red', 'green', 'blue'];
 
@@ -327,7 +327,7 @@ const second = colors[1];
 
 console.log(first); // red
 ````
-#### with distruction 
+#### with Destructuring 
 ````js
 const colors = ['red', 'green', 'blue'];
 
@@ -359,7 +359,7 @@ console.log(theme);    // Dark Mode
 console.log(language); // English
 
 ````
-#### reset synthax 
+#### rest synthax 
 ````js
 const podium = ['Gold', 'Silver', 'Bronze', '4th Place', '5th Place'];
 
@@ -409,7 +409,7 @@ nums.splice(2,1,6);
 remove single element 
 ```js
 let fruits = ["apple", "banana", "orange"];
-let toRem = indexOf("orange");
+let toRem = fruits.indexOf("orange");
 if(toRem !== -1){
 fruits.splice(toRem, 1)
 }
@@ -436,13 +436,13 @@ originalArray.slice(start,end);
 [...originalArray];
 ```
 > ##  Objects
-- Everything is object 
-- Composed of:  property , value 
+- The fundamental building blocks of JS, 
+used to store keyed collections and complex entities. 
 
 ```
 const person ={
- name = "Joe"
- age = 30
+ name = "Joe",
+ age = 30,
  city = "Wonder Land"
 };
 let pptyName = "name"
