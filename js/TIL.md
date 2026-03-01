@@ -469,3 +469,67 @@ console.log(person["name"]);//Joe
 ```js
 console.log(person[pptyName]);//Joe
 ```
+#### removing properties 
+1.
+ ```js 
+delete obj.ppptyName;
+```
+2. 
+```js
+const {pptyName1, pptyName2, ...remain} = obj;
+console.log(remain);
+//returns object with ppty1 and 2 removed
+```
+
+#### checking ppties 
+1.
+ ```js
+objectName.hasOwnProperty("nameYouWannaCheck")
+```
+2. 
+```js
+console.log("name"  in  objectName);
+```
+3.
+ ```js
+console.log(objectName.propertyName !== undefined);
+//be careful with this one 
+```
+
+#### nested navigation 
+```js
+const company = {
+  name: "TechNova",
+  location: "San Francisco",
+  departments: [
+    {
+      id: 101,
+      name: "Engineering",
+      headcount: 50,
+      details: { lead: "Alice", budget: 500000 }
+    },
+    {
+      id: 102,
+      name: "Marketing",
+      headcount: 12,
+      details: { lead: "Marcus", budget: 150000 } // <--- Target Value
+    }
+  ]
+};
+
+
+// Navigating to marketing budget
+
+const marketingBudget = company.departments[1].details.budget;
+console.log(marketingBudget); //150000
+```
+#### object methods
+```js
+const obj = {
+name: "bob",
+hi: function(){
+return `hello I'm ${this.name}`
+}
+};
+console.log(obj.hi())
+```
