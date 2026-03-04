@@ -533,3 +533,26 @@ return `hello I'm ${this.name}`
 };
 console.log(obj.hi())
 ```
+#### JSON Basics
+​
+ - (JavaScript Object Notation) is a lightweight, text-based format used for storing and transporting structured data.
+
+- Use double quotes for keys.
+
+**​Accessing Keys**
+- ​ dot notation (e.g.,``` user.name```).
+- ​ bracket notation (e.g., ```user["first name"]```)
+
+**​JSON.stringify()**
+- ​ Converts a JavaScript object or array into a JSON-formatted string.
+- ​Example: 
+```js
+const user = { name : "john",  age : 30}
+const toJson = JSON.stringify(user)
+```
+**​JSON.parse()**
+- ​Takes a JSON string and transforms it back into a native JavaScript object.
+- ​Example: 
+```js
+const userData = JSON.parse(jsonString);
+```
