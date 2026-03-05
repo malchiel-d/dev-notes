@@ -1,0 +1,58 @@
+<h2>submit your favorite color to find your personality</h2>
+<div id="radios">
+<label>
+  <input type="radio" name="color" value="red">
+  <span>red</span>
+</label>
+
+<label>
+  <input type="radio" name="color" value="green">
+  <span>green</span>
+</label>
+
+<label>
+  <input type="radio" name="color" value="blue">
+  <span>blue</span>
+</label>
+</div>
+<p id="outp"></p>
+<button  onclick="showColor()">submit</button>
+<button onclick="startA()" style="margin-left: 30px;">clear</button>
+<script>
+const radios = document.querySelectorAll('#radios input[type="radio"]');
+radios.forEach(r => {
+  r.addEventListener('click', function(){
+    if(this.wasChecked){
+      this.checked = false;
+    }
+    radios.forEach(rb => rb.wasChecked = rb.checked);
+  });
+});
+
+function showColor(){
+  let selected = document.querySelector('input[name=color]:checked');
+  let outp = document.getElementById("outp");
+  let text = selected.value;
+  const persIs = `your personlity is: `
+  if(text=="blue"){
+    text = persIs+"calm, thoughtful, loyal"
+  }
+  else if(text == "red"){
+    text = persIs+"passionate, bold, energetic"
+  }
+  else{
+    text = persIs+"balanced, nurturing, practical"
+  }
+  if(!selected){
+    outp.innerHTML = "pick a color first";
+    return;
+  }
+
+  outp.innerHTML = text;
+  outp.style.color = selected.value;
+}
+function startA(){
+  radios.forEach(r => r.checked = false);
+outp.innerHTML = ""
+}
+</script>
