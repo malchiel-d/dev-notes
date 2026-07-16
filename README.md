@@ -1,6 +1,6 @@
 # DevNotes
 
-This repository is a collection of my personal learning notes, code snippets, and progress checks as I learn Front end Development. 
+This repository is a collection of my personal learning notes, code snippets, and progress checks as I learn programming. 
 
 ---
 
@@ -10,16 +10,12 @@ This repository is a collection of my personal learning notes, code snippets, an
 
 ###  [Git & GitHub](Git-and-GitHub)
 
-###  [Archives](Archive)
-> Old notes and reference material.
 
 ---
 
 ## Latest Focus
 
- Currently focusing on **JavaScript Fundamentals**.
-Check the [JavaScript Roadmap](js/README.md) to see my detailed checklist.
-
+ Currently focusing on **JavaScript**.
 ---
 
-*Repo structure refactored and main readme edit on Feb 20, 2026.*
+*Repo structure refactored and main readme edit on Jul 17, 2026.*
