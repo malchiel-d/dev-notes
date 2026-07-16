@@ -441,9 +441,9 @@ used to store keyed collections and complex entities.
 
 ```
 const person ={
- name = "Joe",
- age = 30,
- city = "Wonder Land"
+ name : "Joe",
+ age : 30,
+ city : "Wonder Land"
 };
 let pptyName = "name"
 ```
